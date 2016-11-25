@@ -3,6 +3,8 @@ boss_health = 150
 boss_damage = 0
 your_damage = 0
 
+#If you win, type attack1() to restart or run the module again./
+
 def statusbar():
 
     global your_damage, health, boss_damage, boss_health
@@ -288,6 +290,8 @@ def end1():
     print("You have been defeated by the dragon!")
     print("")
     print("------------------------------------------------")
+    print("--------------------RESTART---------------------")
+    print("------------------------------------------------")
     attack1()
         
 
@@ -296,17 +300,12 @@ def end2():
 
     print("")
     print("You have defeated the dragon!")
+    print("")
+    print("------------------------------------------------")
+    print("--------------------RESTART---------------------")
+    print("------------------------------------------------")
+    attack1()
     
-
-    
-
-    
-
-    
-    
-
-
-
     
 
 if __name__ == "__main__":
